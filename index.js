@@ -48,6 +48,7 @@ app.get("/success", function (req, res) {
     },
   }).then((response) => {
     console.log(response.data);
+    console.log(response.data.user);
     res.render("pages/success", { userData: response.data });
   });
 });
